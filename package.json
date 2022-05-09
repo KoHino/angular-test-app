@@ -1,11 +1,15 @@
 {
   "name": "angular-app",
   "version": "0.0.0",
+  "engines": {
+    "node": "17.0.1",
+    "npm": "8.1.0"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run start --prefix server",
     "start-dev": "ng serve --proxy-config proxy.config.json",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
